@@ -23,7 +23,10 @@ import 'package:modularuiwidgets/widgets/cards/mui_profile_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_sign_in_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_sign_up_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_simple_card.dart';
-import 'package:modularuiwidgets/widgets/carousel/mui_carousel.dart';
+import 'package:modularuiwidgets/widgets/carousel/mui_carousel1.dart';
+import 'package:modularuiwidgets/widgets/carousel/mui_carousel2.dart';
+import 'package:modularuiwidgets/widgets/carousel/mui_carousel3.dart';
+import 'package:modularuiwidgets/widgets/carousel/mui_carousel4.dart';
 import 'package:modularuiwidgets/widgets/checkox/mui_checkbox.dart';
 import 'package:modularuiwidgets/widgets/input/mui_primary_input_field.dart';
 import 'package:modularuiwidgets/widgets/listtile/mui_primary_listtile.dart';
@@ -179,12 +182,45 @@ final GoRouter _router = GoRouter(
             return const MUIGradientBlockLevelButtonWidget();
           },
         ),
+
+        // carousel
         GoRoute(
-          path: 'carousel',
+          path: 'carousel/carousel1',
           builder: (BuildContext context, GoRouterState state) {
-            return const MUICarouselWidget();
+            return const MUICarousel1Widget();
           },
         ),
+        GoRoute(
+          path: 'carousel/carousel2',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarousel2Widget();
+          },
+        ),
+        GoRoute(
+          path: 'carousel/carousel3',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarousel3Widget();
+          },
+        ),
+        GoRoute(
+          path: 'carousel/carousel4',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarousel4Widget();
+          },
+        ),
+        GoRoute(
+          path: 'carousel/carousel5',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarousel1Widget();
+          },
+        ),
+        GoRoute(
+          path: 'carousel/carousel6',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarousel1Widget();
+          },
+        ),
+
         GoRoute(
           path: 'checkbox',
           builder: (BuildContext context, GoRouterState state) {
