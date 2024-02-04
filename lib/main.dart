@@ -28,6 +28,7 @@ import 'package:modularuiwidgets/widgets/checkox/mui_checkbox.dart';
 import 'package:modularuiwidgets/widgets/input/mui_primary_input_field.dart';
 import 'package:modularuiwidgets/widgets/listtile/mui_primary_listtile.dart';
 import 'package:modularuiwidgets/widgets/rating_bar/mui_rating_bar.dart';
+import 'package:modularuiwidgets/widgets/slider/mui_slider.dart';
 import 'package:modularuiwidgets/widgets/switch/mui_switch.dart';
 
 void main() {
@@ -208,6 +209,12 @@ final GoRouter _router = GoRouter(
           path: 'switch',
           builder: (BuildContext context, GoRouterState state) {
             return const MUISwitchWidget();
+          },
+        ),
+        GoRoute(
+          path: 'slider',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUISliderWidget();
           },
         ),
         
