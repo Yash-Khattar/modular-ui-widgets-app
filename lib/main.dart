@@ -25,6 +25,10 @@ import 'package:modularuiwidgets/widgets/cards/mui_sign_up_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_simple_card.dart';
 import 'package:modularuiwidgets/widgets/carousel/mui_carousel.dart';
 import 'package:modularuiwidgets/widgets/checkox/mui_checkbox.dart';
+import 'package:modularuiwidgets/widgets/input/mui_primary_input_field.dart';
+import 'package:modularuiwidgets/widgets/listtile/mui_primary_listtile.dart';
+import 'package:modularuiwidgets/widgets/rating_bar/mui_rating_bar.dart';
+import 'package:modularuiwidgets/widgets/switch/mui_switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -180,6 +184,30 @@ final GoRouter _router = GoRouter(
           path: 'checkbox',
           builder: (BuildContext context, GoRouterState state) {
             return const MUICheckboxWidget();
+          },
+        ),
+        GoRoute(
+          path: 'primaryinputfield',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIPrimaryInputFieldWidget();
+          },
+        ),
+        GoRoute(
+          path: 'listtile',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUPrimaryListtileWidget();
+          },
+        ),
+        GoRoute(
+          path: 'ratingbar',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIRatingBarWidget();
+          },
+        ),
+        GoRoute(
+          path: 'switch',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUISwitchWidget();
           },
         ),
         
