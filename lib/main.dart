@@ -23,6 +23,7 @@ import 'package:modularuiwidgets/widgets/cards/mui_profile_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_sign_in_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_sign_up_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_simple_card.dart';
+import 'package:modularuiwidgets/widgets/carousel/mui_carousel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -166,6 +167,12 @@ final GoRouter _router = GoRouter(
           path: 'block/gradientbutton',
           builder: (BuildContext context, GoRouterState state) {
             return const MUIGradientBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'carousel',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICarouselWidget();
           },
         ),
         
