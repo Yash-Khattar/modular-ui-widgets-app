@@ -24,6 +24,7 @@ import 'package:modularuiwidgets/widgets/cards/mui_sign_in_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_sign_up_card.dart';
 import 'package:modularuiwidgets/widgets/cards/mui_simple_card.dart';
 import 'package:modularuiwidgets/widgets/carousel/mui_carousel.dart';
+import 'package:modularuiwidgets/widgets/checkox/mui_checkbox.dart';
 
 void main() {
   runApp(const MyApp());
@@ -173,6 +174,12 @@ final GoRouter _router = GoRouter(
           path: 'carousel',
           builder: (BuildContext context, GoRouterState state) {
             return const MUICarouselWidget();
+          },
+        ),
+        GoRoute(
+          path: 'checkbox',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUICheckboxWidget();
           },
         ),
         
