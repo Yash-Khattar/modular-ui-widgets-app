@@ -30,6 +30,10 @@ import 'package:modularuiwidgets/widgets/listtile/mui_primary_listtile.dart';
 import 'package:modularuiwidgets/widgets/rating_bar/mui_rating_bar.dart';
 import 'package:modularuiwidgets/widgets/slider/mui_slider.dart';
 import 'package:modularuiwidgets/widgets/switch/mui_switch.dart';
+import 'package:modularuiwidgets/widgets/tabs/mui_tabbar1.dart';
+import 'package:modularuiwidgets/widgets/tabs/mui_tabbar2.dart';
+import 'package:modularuiwidgets/widgets/tabs/mui_tabbar3.dart';
+import 'package:modularuiwidgets/widgets/tabs/mui_tabbar4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,7 +59,7 @@ final GoRouter _router = GoRouter(
             return const MUIPrimaryCardWidget();
           },
         ),
-         GoRoute(
+        GoRoute(
           path: 'profilecard',
           builder: (BuildContext context, GoRouterState state) {
             return const MUIProfileCardWidget();
@@ -73,25 +77,25 @@ final GoRouter _router = GoRouter(
             return const MUISignUpCardWidget();
           },
         ),
-         GoRoute(
+        GoRoute(
           path: 'pricingcard',
           builder: (BuildContext context, GoRouterState state) {
             return const MUIPricingCardWidget();
           },
         ),
-         GoRoute(
+        GoRoute(
           path: 'blogcard',
           builder: (BuildContext context, GoRouterState state) {
             return const MUIBlogCardWidget();
           },
         ),
-         GoRoute(
+        GoRoute(
           path: 'primarybutton',
           builder: (BuildContext context, GoRouterState state) {
             return const MUIPrimaryButtonWidget();
           },
         ),
-         GoRoute(
+        GoRoute(
           path: 'secondarybutton',
           builder: (BuildContext context, GoRouterState state) {
             return const MUISecondaryButtonWidget();
@@ -217,7 +221,33 @@ final GoRouter _router = GoRouter(
             return const MUISliderWidget();
           },
         ),
-        
+
+        //tabs
+
+        GoRoute(
+          path: 'tabbar',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUITabbarWidget();
+          },
+        ),
+        GoRoute(
+          path: 'tabbarTransparent',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUITabbarTransparentWidget();
+          },
+        ),
+        GoRoute(
+          path: 'tabbarUnderlined',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUITabbarUnderlinedWidget();
+          },
+        ),
+        GoRoute(
+          path: 'tabbarVertical',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUITabbarVerticalWidget();
+          },
+        ),
       ],
     ),
   ],
