@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:modularuiwidgets/home.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_gradient_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_loading_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_outlined_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_primary_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_secondary_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_secondary_outlined_block_level_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/block_level_buttons/mui_text_block_level_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_gradient_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_loading_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_outlined_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_primary_button.dart';
+import 'package:modularuiwidgets/widgets/buttons/mui_radio_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_secondary_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_secondary_outlined_button.dart';
 import 'package:modularuiwidgets/widgets/buttons/mui_text_button.dart';
@@ -112,6 +120,55 @@ final GoRouter _router = GoRouter(
             return const MUISecondaryOutlinedButtonWidget();
           },
         ),
+        GoRoute(
+          path: 'radiobutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIRadioButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/primarybutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIPrimaryBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/secondarybutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUISecondaryBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/secondaryoutlinedbutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUISecondaryOutlinedBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/textbutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUITextBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/outlinedbutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIOutlinedBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/loadingbutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUILoadingBlockLevelButtonWidget();
+          },
+        ),
+        GoRoute(
+          path: 'block/gradientbutton',
+          builder: (BuildContext context, GoRouterState state) {
+            return const MUIGradientBlockLevelButtonWidget();
+          },
+        ),
+        
       ],
     ),
   ],
